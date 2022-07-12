@@ -8,9 +8,6 @@ export class attractions extends BaseEntity {
     @Column({ type: "varchar", length: 30 })
     name!: string;
 
-    @Column({ type: "varchar", length: 240 })
-    icon_url!: string;
-
     @Column({ type: "varchar", length: 50 })
     coordinates!: string;
 
@@ -19,5 +16,8 @@ export class attractions extends BaseEntity {
 
     @Column({ type: "varchar", length: 240 })
     image_url!: string;
+
+    @Column({ type: "varchar", length: 60 })
+    en_name!: string;
 
 }
